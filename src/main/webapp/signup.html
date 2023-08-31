@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title style="color: white;"><b>Registration Form</b></title>
+<style>
+    body {
+        background-image: url(./img/blursignup.avif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #box {
+        margin: auto;
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        border: 3px solid black;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        color: crimson;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"] {
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    button {
+        width: 100px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: greenyellow;
+        color: black;
+    }
+
+    input[type="reset"] {
+        background-color: orange;
+        color: white;
+        margin-right: 10px;
+    }
+
+    a {
+        color: teal;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<center>
+    <h1 style="color: white;"><i>Register Here</i></h1>
+    <form action="register.jsp" method="post">
+        <div id="box">
+            <label>Create Username</label><br>
+            <input type="text" name="username" required placeholder="Create username"><br>
+            <label>Set Password</label><br>
+            <input type="password" name="pwd" required placeholder="Password"><br>
+            <label>Enter Email</label><br>
+            <input type="email" name="email" placeholder="Enter email"><br>
+            <label>Enter Mobile</label><br>
+            <input type="number" name="mobile" required placeholder="Enter mobile"><br>
+            <input type="reset" value="Clear">
+            <button type="submit" value="signup">Submit</button>
+            <br><br>
+            <h4>Already a user? <a href="welcome.html">Click here to Sign in...</a></h4>
+        </div>
+    </form>
+</center>
+
+</body>
+</html>

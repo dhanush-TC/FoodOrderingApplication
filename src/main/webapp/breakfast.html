@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Breakfast Menu</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: Gainsboro;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: White;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  h1 {
+    text-align: center;
+    color: DimGrey;
+    margin-bottom: 20px;
+  }
+  .recipe {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: AliceBlue;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .recipe h2 {
+    margin-top: 0;
+    color: Black;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .recipe p {
+    color: Grey;
+    line-height: 1.5;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: Grey;
+  }
+  input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid Grey;
+    border-radius: 4px;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: DarkOrange;
+    color: White;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: Tomato;
+  }
+</style>
+</head>
+<body>
+	
+  <div class="container">
+    <h1>Delicious Breakfast Menu</h1>
+    <form action="breakfast.jsp" name="breakfast">
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="dosaQuantity" name="dosaQuantity"  value="0"min="0" max="5">
+        <h2>Masala Dosa</h2> &nbsp;<h3>Price-- rs.99</h3>
+        <p>A South Indian delight, masala dosa is a thin, crispy rice crepe filled with spiced potato.</p>
+        <p><strong>Ingredients:</strong> Rice and lentil batter, potatoes, spices, oil.</p>
+        <p><strong>Instructions:</strong> Spread batter on a hot griddle, add potato filling, fold and serve.</p>
+      </div>
+      
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="pohaQuantity" name="pohaQuantity" value="0" min="0" max="5">
+        <h2>Poha</h2> &nbsp;<h3>Price-- rs.149</h3>
+        <p>Poha is a light and flavorful dish made from flattened rice, often cooked with spices and vegetables.</p>
+        <p><strong>Ingredients:</strong> Flattened rice, mustard seeds, curry leaves, onion, turmeric.</p>
+        <p><strong>Instructions:</strong> Wash poha, temper spices, add vegetables, cook and serve.</p>
+      </div>
+      
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="upmaQuantity" name="upmaQuantity" value="0" min="0" max="5">
+        <h2>Upma</h2> &nbsp;<h3>Price-- rs.129</h3>
+        <p>Upma is a savory dish made from semolina and vegetables, perfect for a hearty breakfast.</p>
+        <p><strong>Ingredients:</strong> Semolina, mustard seeds, chilies, ginger, vegetables.</p>
+        <p><strong>Instructions:</strong> Roast semolina, temper spices, cook with vegetables, and serve hot.</p>
+      </div>
+      
+      <input type="submit" value="Order my Food">
+    </form>
+  </div>
+</body>
+</html>

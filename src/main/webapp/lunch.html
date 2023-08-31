@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunch Recipe Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: Gainsboro;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: White;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: DimGrey;
+      margin-bottom: 20px;
+    }
+    .recipe {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: AliceBlue;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .recipe h2 {
+      margin-top: 0;
+      color: DimGrey;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .recipe p {
+      color: DarkSlateGray;
+      line-height: 1.5;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: LightSlateGrey;
+    }
+    input[type="number"] {
+      width: 40px;
+      padding: 5px;
+      border: 1px solid LightGrey;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: Orange;
+      color: White;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ;
+    }
+    input[type="submit"]:hover {
+      background-color: DarkOrange;
+    }
+  </style>
+</head>
+<body>
+  <form action="lunch.jsp" name="lunch" >
+    <div class="container">
+      <h1>Tasty Lunch Menu</h1>
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="grilledQuantity" name="grilledQuantity"  value="0" min="0" max="5">
+        <h2>Grilled Chicken Salad</h2> &nbsp; <h3>Price-- rs.349</h3> 
+        <p>Enjoy a healthy and hearty lunch with this grilled chicken salad packed with fresh veggies and protein.</p>
+        <p><strong>Ingredients:</strong> Chicken breast, lettuce, tomatoes, cucumbers, bell peppers, dressing.</p>
+        <p><strong>Instructions:</strong> Grill chicken, chop vegetables, toss together with dressing.</p>
+      </div>
+      
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="vegwrapQuantity" name="vegwrapQuantity" value="0" min="0" max="5">
+        <h2>Vegetarian Wrap</h2> &nbsp;<h3>Price-- rs.199</h3>
+        <p>A delightful wrap filled with a medley of colorful vegetables and your choice of flavorful sauce.</p>
+        <p><strong>Ingredients:</strong> Tortilla, hummus, spinach, carrots, bell peppers, avocado.</p>
+        <p><strong>Instructions:</strong> Spread hummus on tortilla, layer veggies, wrap, and enjoy!</p>
+      </div>
+      
+      <div class="recipe">
+        <label >Quantity:</label>
+        <input type="number" id="vegbowlQuantity" name="vegbowlQuantity" value="0" min="0" max="5">
+        <h2>Quinoa and Roasted Veggie Bowl</h2>&nbsp;<h3>Price-- rs.249</h3>
+        <p>Experience the nutty goodness of quinoa paired with roasted vegetables for a satisfying lunch.</p>
+        <p><strong>Ingredients:</strong> Quinoa, zucchini, eggplant, red onion, olive oil, spices.</p>
+        <p><strong>Instructions:</strong> Cook quinoa, roast veggies, combine and season to taste.</p>
+      </div>
+      
+      <input type="submit" value="Order Now">
+    </div>
+  </form>
+</body>
+</html>

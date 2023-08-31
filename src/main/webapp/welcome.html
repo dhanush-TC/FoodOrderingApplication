@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AMIGO Food Ordering</title>
+    <style>
+        body {
+            background-color: darkkhaki;
+            background-image: url(./img/welcome1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #top {
+            background-color: black;
+            color: ghostwhite;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #box {
+            margin: auto;
+            width: 300px;
+            padding: 20px;
+            border: 3px  black;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #box h2 {
+            color: teal;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: teal;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #006d6d;
+        }
+
+        a {
+            color: teal;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #box p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+	
+    <div id="top">
+        <marquee><h3>Welcome to AMIGO online food ordering application.... Get food delivered in minutes... :)</h3></marquee>
+    </div> <br> <br>
+    
+    <div id="box" style="margin-top: 100px;">
+        <form action="Verification.jsp" method="post">
+            <h2>Login</h2>
+            <label for="userid">Username</label>
+            <input type="text" id="userid" placeholder="Enter user ID" required name="userid">
+            <label for="userpassword">Password</label>
+            <input type="password" id="userpassword" placeholder="Enter password" required name="userpassword">
+            <input type="submit" value="Login"> 
+        </form>
+        <p>New user? <a href="signup.html">Click here to sign up...</a></p>
+    </div>
+</body>
+</html>
